@@ -1,0 +1,136 @@
+{
+  "ramlVersion": "RAML10",
+  "type": "Api",
+  "specification": {
+    "title": "raml-service",
+    "mediaType": "application/json",
+    "resources": [
+      {
+        "methods": [
+          {
+            "responses": {
+              "200": {
+                "code": "200",
+                "body": {
+                  "application/json": {
+                    "name": "application/json",
+                    "displayName": "application/json",
+                    "type": [
+                      "object"
+                    ],
+                    "required": true,
+                    "__METADATA__": {
+                      "primitiveValuesMeta": {
+                        "displayName": {
+                          "calculated": true
+                        },
+                        "type": {
+                          "insertedAsDefault": true
+                        },
+                        "required": {
+                          "insertedAsDefault": true
+                        }
+                      }
+                    }
+                  },
+                  "description": {
+                    "name": "description",
+                    "displayName": "description",
+                    "type": [
+                      "Parsed RAML"
+                    ],
+                    "required": true,
+                    "__METADATA__": {
+                      "primitiveValuesMeta": {
+                        "displayName": {
+                          "calculated": true
+                        },
+                        "required": {
+                          "insertedAsDefault": true
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "body": {
+              "application/json": {
+                "name": "application/json",
+                "displayName": "application/json",
+                "type": [
+                  "object"
+                ],
+                "required": true,
+                "__METADATA__": {
+                  "primitiveValuesMeta": {
+                    "displayName": {
+                      "calculated": true
+                    },
+                    "type": {
+                      "insertedAsDefault": true
+                    },
+                    "required": {
+                      "insertedAsDefault": true
+                    }
+                  }
+                }
+              }
+            },
+            "description": "Parse the given RAML files",
+            "method": "post"
+          }
+        ],
+        "relativeUri": "/parseFiles",
+        "displayName": "/parseFiles",
+        "__METADATA__": {
+          "primitiveValuesMeta": {
+            "displayName": {
+              "calculated": true
+            }
+          }
+        },
+        "relativeUriPathSegments": [
+          "parseFiles"
+        ],
+        "absoluteUri": "/parseFiles"
+      }
+    ]
+  },
+  "errors": [
+    {
+      "code": "MEDIATYPE_EXCEPTION",
+      "message": "invalid media type",
+      "path": "api.raml",
+      "range": {
+        "start": {
+          "line": 14,
+          "column": 10,
+          "position": 238
+        },
+        "end": {
+          "line": 14,
+          "column": 21,
+          "position": 249
+        }
+      }
+    },
+    {
+      "code": "INHERITING_UNKNOWN_TYPE",
+      "message": "Inheriting from unknown type",
+      "path": "api.raml",
+      "range": {
+        "start": {
+          "line": 14,
+          "column": 10,
+          "position": 238
+        },
+        "end": {
+          "line": 14,
+          "column": 21,
+          "position": 249
+        }
+      }
+    }
+  ]
+}

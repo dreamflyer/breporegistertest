@@ -1,0 +1,15 @@
+#%RAML 0.8
+title: New API
+version: v1
+mediaType: application/json
+baseUri: http://samplehost.com
+schemas:
+  - schema1:
+      type: aaa
+  - schema2:
+      type: bbb
+/helloWorld:
+  get:
+    responses:
+      200:
+         body:

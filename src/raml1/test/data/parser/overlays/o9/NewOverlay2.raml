@@ -1,0 +1,18 @@
+#%RAML 1.0 Overlay
+extends: api.raml
+types:
+  TestType:
+    properties:
+      firstProp: string
+      secondProp: string
+    examples:
+      First:
+        value: |
+          {
+            "firstProp" : "overlay2FirstProp",
+            "secondProp" : "overlay2SecondProp"
+          }
+      Second:
+        value:
+          firstProp: "overlay2FirstPropYaml"
+          secondProp: "overlay2SecondPropYaml"
